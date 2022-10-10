@@ -38,7 +38,7 @@ nav {
 	margin: 10px 0;
 }
 
-nav a {
+nav li {
 	color: var(--cor4);
 	text-decoration: none;
 	list-style: none;
@@ -70,7 +70,7 @@ nav a:hover {
 }
 
 #showromCarros {
-    background: url('imagens/f1Car.jpg');
+    background: url('../imagens/f1Car.jpg') center top no-repeat fixed;
     height: 300px;
     box-shadow: inset 6px 6px 13px 0px black;
 }
@@ -108,17 +108,17 @@ h2 {
 }
 
 #ayrtonSenna {
-	background: url('imagens/ayrton.jpg') center top no-repeat fixed;
+	background: url('../imagens/ayrton.jpg') center top no-repeat fixed;
 	height: 190px;
 }
 
 #lewisHamilton {
-	background: url('imagens/hamilton.png') center center no-repeat fixed;
+	background: url('../imagens/hamilton.png') center center no-repeat fixed;
 	height: 190px;
 }
 
 #michaelSchumacher{
-	background: url('imagens/schumacher.jpg') center top no-repeat fixed;
+	background: url('../imagens/schumacher.jpg') center top no-repeat fixed;
 	height: 160px;
 }
 
@@ -154,26 +154,30 @@ h2 {
 }
 
 #mercedesLogo {
-	background: url('imagens/mercedesLogo.jpg') center center no-repeat;
+	background: url('../imagens/mercedesLogo.jpg') center center no-repeat;
 	background-size: cover;
 }
 
 #ferrariLogo {
-	background: url('imagens/ferrari.jpg') center center no-repeat;
+	background: url('../imagens/ferrari.jpg') center center no-repeat;
 	background-size: cover;
 }
 
 .card1 {
+	color: white;
 	background-color: var(--cor);
 
-	display: none;
-	position: fixed;
-	top: 25vh;
-	right: 5vw;
+	position: absolute;
+	top: 2250px;
+	left: 37px;
 	width: 70vw;
 	height: 60vh;
 	padding: 10px;
 	border: 1px solid black;
 	border-radius: 7px;
 	box-shadow: 2px 2px 7px black;
+}
+
+.card1 ul {
+	list-style: none;
 }
