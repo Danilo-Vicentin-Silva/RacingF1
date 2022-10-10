@@ -173,6 +173,8 @@ h2 {
 	width: 70vw;
 	height: 60vh;
 	padding: 10px;
+	display: none;
+
 	border: 1px solid black;
 	border-radius: 7px;
 	box-shadow: 2px 2px 7px black;
@@ -180,4 +182,15 @@ h2 {
 
 .card1 ul {
 	list-style: none;
+}
+
+.card1 button {
+	position: absolute;
+	top: 2vh;
+	left: 65vw;
+}
+
+.card1 img {
+	margin: auto;
+	display: block;
 }
