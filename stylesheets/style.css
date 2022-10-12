@@ -166,6 +166,10 @@ h2 {
 	background: url('../imagens/mclaren-logo.jpg') center center no-repeat;
 	background-size: cover;	
 }
+#williamsLogo {
+	background: url('../imagens/williams-logo.jpg') center center no-repeat;
+	background-size: cover;
+}
 
 .card1 {
 	color: white;
@@ -183,6 +187,10 @@ h2 {
 	border: 1px solid black;
 	border-radius: 7px;
 	box-shadow: 2px 2px 7px black;
+}
+
+#williamsCard1 {
+	height: 85vh;
 }
 
 .card1 ul {
