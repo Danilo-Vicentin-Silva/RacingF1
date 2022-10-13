@@ -15,7 +15,16 @@
 	padding: 0;
 }
 
+.dicas {
+	color: white;
+	text-align: left;
+
+	margin: 10px 10px;
+}
+
+
 body {
+	color: white;
 	font-family: var(--font), Arial, Helvetica, sans-serif;
 	background-image: linear-gradient(to bottom, #400101, #730202);
 	background-repeat: no-repeat;
@@ -206,4 +215,16 @@ h2 {
 .card1 img {
 	margin: auto;
 	display: block;
+}
+
+#pistas {
+	margin: 10px 15px;
+}
+
+#pistas p {
+	margin-bottom: 10px;
+}
+
+.alinhamentoDireita {
+	text-align: right;
 }
