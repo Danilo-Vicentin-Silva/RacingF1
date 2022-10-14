@@ -22,13 +22,15 @@
 	margin: 10px 10px;
 }
 
+hr {
+	margin: 10px 3px;
+}
+
 
 body {
-	color: white;
 	font-family: var(--font), Arial, Helvetica, sans-serif;
-	background-image: linear-gradient(to bottom, #400101, #730202);
-	background-repeat: no-repeat;
-	height: 100%;
+	color: white;
+	background-color: var(--cor2);
 }
 
 header {
@@ -199,7 +201,7 @@ h2 {
 }
 
 #williamsCard1 {
-	height: 85vh;
+	height: 500px;
 }
 
 .card1 ul {
@@ -226,5 +228,5 @@ h2 {
 }
 
 .alinhamentoDireita {
-	text-align: right;
+	text-align: end;
 }
