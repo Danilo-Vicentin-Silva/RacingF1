@@ -227,6 +227,13 @@ h2 {
 	margin-bottom: 10px;
 }
 
+
+#pistas h3 {
+	color: var(--cor4);
+	text-decoration: overline;
+	padding: 5px;
+}
+
 .alinhamentoDireita {
 	text-align: end;
 }
