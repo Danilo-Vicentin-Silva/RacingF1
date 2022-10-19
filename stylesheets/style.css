@@ -26,6 +26,11 @@ hr {
 	margin: 10px 3px;
 }
 
+a:hover {
+	color: #a61103;
+	text-decoration: overline;
+}
+
 
 body {
 	font-family: var(--font), Arial, Helvetica, sans-serif;
@@ -37,66 +42,69 @@ header {
 	color: white;
 	text-align: center;
 	background-color: var(--cor);
-    box-shadow: 5px 3px 10px black;
+	box-shadow: 5px 3px 10px black;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 93px;
+	width: 100%;
 }
 
-header > h1 {
-	margin: auto;
-	padding: 15px;
+header h1 {
+	margin-top: 5px;
 }
 
 nav {
 	margin: 10px 0;
 }
 
-nav li {
+nav li, a {
 	color: var(--cor4);
 	text-decoration: none;
 	list-style: none;
 	display: inline-block;
-	margin: 0 5vw;
-}
-
-nav a:hover {
-	color: #a61103;
-	text-decoration: overline;
+	margin-left: 8px;
+	margin-right: 10px;
 }
 
 #introducao {
-    color: white;
-    text-align: justify;
-    width: 80vw;
-    padding: 10px;
-    margin: auto;
+	color: white;
+	text-align: justify;
+	width: 80vw;
+	padding: 10px;
+	margin: auto;
+	margin-top: 120px;
 }
 
 #introducao > h2 {
-    text-shadow: 3px 3px 6px black;
-    margin-bottom: 20px;
+	text-shadow: 3px 3px 6px black;
+	margin-bottom: 20px;
 }
 
 #introducao p {
-    text-shadow: 5px 5px 7px black;
-    margin-left: 5px;
+	text-shadow: 5px 5px 7px black;
+	margin-left: 5px;
 }
 
 #showromCarros {
-    background: url('../imagens/f1Car.jpg') center top no-repeat fixed;
-    height: 300px;
-    box-shadow: inset 6px 6px 13px 0px black;
+	background: url("../imagens/f1Car.jpg") center top no-repeat fixed;
+	height: 300px;
+	box-shadow: inset 6px 6px 13px 0px black;
 }
 
 #melhoresPilotos {
 	color: white;
 }
 
-#melhoresPilotos a, a:visited {
+#melhoresPilotos a,
+a:visited {
 	color: var(--cor4);
 }
 
 #melhoresPilotos h3 {
 	text-align: left;
-	background-image: linear-gradient(to right,#1b1926, #0d0c12);
+	background-image: linear-gradient(to right, #1b1926, #0d0c12);
 	margin-top: 30px;
 	padding: 10px;
 	display: inline-block;
@@ -114,23 +122,21 @@ nav a:hover {
 
 .fotosPilotos {
 	background-size: contain;
+	height: 250px;
 	display: block;
 	box-shadow: inset 6px 6px 13px 0px black;
 }
 
 #ayrtonSenna {
-	background: url('../imagens/ayrton.jpg') center top no-repeat fixed;
-	height: 190px;
+	background: url("../imagens/ayrton.jpg") center top no-repeat fixed;
 }
 
 #lewisHamilton {
-	background: url('../imagens/hamilton.png') center center no-repeat fixed;
-	height: 190px;
+	background: url("../imagens/hamilton.png") center center no-repeat fixed;
 }
 
-#michaelSchumacher{
-	background: url('../imagens/schumacher.jpg') center top no-repeat fixed;
-	height: 160px;
+#michaelSchumacher {
+	background: url("../imagens/schumacher.jpg") center top no-repeat fixed;
 }
 
 #melhoresPilotos p {
@@ -165,20 +171,20 @@ nav a:hover {
 }
 
 #mercedesLogo {
-	background: url('../imagens/mercedesLogo.jpg') center center no-repeat;
+	background: url("../imagens/mercedesLogo.jpg") center center no-repeat;
 	background-size: cover;
 }
 
 #ferrariLogo {
-	background: url('../imagens/ferrari-logo.jpg') center center no-repeat;
+	background: url("../imagens/ferrari-logo.jpg") center center no-repeat;
 	background-size: cover;
 }
 #mclarenLogo {
-	background: url('../imagens/mclaren-logo.jpg') center center no-repeat;
-	background-size: cover;	
+	background: url("../imagens/mclaren-logo.jpg") center center no-repeat;
+	background-size: cover;
 }
 #williamsLogo {
-	background: url('../imagens/williams-logo.jpg') center center no-repeat;
+	background: url("../imagens/williams-logo.jpg") center center no-repeat;
 	background-size: cover;
 }
 
@@ -188,10 +194,10 @@ nav a:hover {
 	background-color: var(--cor);
 
 	position: absolute;
-	top: 2250px;
+	top: 2425px;
 	left: 37px;
 	width: 70vw;
-	height: 70vh;
+	height: 400px;
 	padding: 10px;
 	display: none;
 
@@ -201,7 +207,7 @@ nav a:hover {
 }
 
 #williamsCard1 {
-	height: 500px;
+	height: 480px;
 }
 
 .card1 ul {
@@ -227,7 +233,6 @@ nav a:hover {
 	margin-bottom: 10px;
 }
 
-
 #pistas h3 {
 	color: var(--cor4);
 	text-decoration: overline;
@@ -241,7 +246,8 @@ nav a:hover {
 #historias {
 	background-color: var(--cor4);
 
-	margin-top: 30px;
+	height: 2500px;
+	margin: 30px 0;
 }
 
 #mensao {
@@ -274,4 +280,22 @@ nav a:hover {
 	margin-bottom: 7px;
 	border-radius: 5px;
 	padding: 20px;
+}
+
+#historias img {
+	margin: auto;
+	display: block;
+}
+
+footer {
+	background-color: var(--cor);
+	text-align: center;
+}
+
+footer li {
+	color: var(--cor4);
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;
+	margin: 8px 10px;
 }
