@@ -5,6 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Formula1, pilotos, equipes,pistas,histórias e informações sobre a Formula 1 no geral">
 	<title>Home</title>
 	<link rel="stylesheet" href="stylesheets/style.css" />
 	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
@@ -15,30 +16,34 @@
 
 <body>
 	<header>
-		<h1>Racing F1</h1>
+		<h1>RACING F1</h1>
 		<nav>
 			<ul>
-				<li><a href="hall-lendas.html" rel="prev" target="_self">Hall das lendas</a></li>
+				<li><a href="https://www.formula1.com/en/results.html" rel="external" target="_blank">Temporada Atual</a></li>
 				<li><a href="index.html" rel="prev" target="_self">Home</a></li>
 				<li><a href="https://github.com/Danilo-Vicentin-Silva" rel="author" target="_blank">Github</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<section id="introducao">
-			<h2 class="title">O que é a Formula 1?</h2>
-			<em>
-				<p>
-					<img src="imagens/aspas.png" alt="aspas"  />
-					Categoria máxima do automobilismo onde os melhores pilotos da
-					história vão além da capacidade humana para atingir a perfeição, em
-					<strong>apenas uma volta</strong><img src="imagens/aspas.png" alt="aspas" />
-				</p>
-			</em>
+		<section id="introducao" class="frases">
+			<h2 class="title">O QUE É A FORMULA 1?</h2>
+			<p>
+				<em>
+					<q>
+						Categoria máxima do automobilismo onde os melhores pilotos da
+						história vão além da capacidade humana para atingir a perfeição, em
+						<strong>apenas uma volta</strong>
+					</q>
+				</em>
+			</p>
 		</section>
+
 		<section id="showromCarros"></section>
+
 		<section id="melhoresPilotos">
-			<h2 class="title">Os melhores pilotos</h2>
+			<h2 class="title">OS MELHORES PILOTOS</h2>
+
 			<article>
 				<h3>Ayrton Senna</h3>
 				<div class="fotosPilotos" id="ayrtonSenna"></div>
@@ -47,7 +52,6 @@
 						<small>Autor da imagem</small>
 					</a>
 				</p>
-
 				<p>
 					Sendo considerado pela maioria como um dos melhores pilotos de F1 de
 					todos os tempos, <q>Ayrton Senna do Brasil</q> foi uma lenda em seus
@@ -55,21 +59,28 @@
 					<strong>GP de Imola de 94</strong>
 				</p>
 			</article>
+
 			<article>
 				<h3>Lewis Hamilton</h3>
 				<div class="fotosPilotos" id="lewisHamilton"></div>
+				<p>
+					<a
+						href="https://commons.wikimedia.org/wiki/File:Lewis_Hamilton_2016_Malaysia_1.jpg" rel="external" target="_blank">
+						<small>Autor da imagem</small>
+					</a>
+				</p>
 				<p>
 					Da nova geração da Formula 1, Sir Hamilton é o detentor do recorde
 					de mais vitórias na F1, tendo praticamente
 					<strong>dominado</strong> todo o esporte por anos em sua Mercedes
 				</p>
 			</article>
+
 			<article>
 				<h3>Michael Schumacher</h3>
 				<div class="fotosPilotos" id="michaelSchumacher"></div>
 				<p>
-					<a
-						href="https://commons.wikimedia.org/wiki/File:Michael_Schumacher_after_2005_United_States_GP_(20413937)_(cropped).jpg" rel="external" target="_blank">
+					<a href="https://commons.wikimedia.org/wiki/File:Michael_Schumacher_after_2005_United_States_GP_(20413937)_(cropped).jpg" rel="external" target="_blank">
 						<small>Autor da imagem</small>
 					</a>
 				</p>
@@ -79,14 +90,16 @@
 					gloria 91 vezes ao pódio mais alto
 				</p>
 			</article>
+
 		</section>
 
 		<section>
-
-			<h2 class="title">As grandes equipes</h2>
+			<h2 class="title">PRINCIPAIS EQUIPES</h2>
 			<p class="dicas"> &#x2728 Clique nos cards abaixo para acessar informações sobre as equipes</p>
+
 			<section id="melhoresEquipes">
 
+				<!-- Ferrari Card -->
 				<div class="card" id="ferrariCard">
 					<div class="logo" id="ferrariLogo"></div>
 					<p>Ferrari</p>
@@ -94,7 +107,7 @@
 				<article class="card1" id="ferrariCard1">
 					<h3>Ferrari</h3>
 					<input type="button" id="esconderFerrari" value="&#x274C">
-					<img src="./imagens/ferrari.jpg" alt="Ferrari F1">
+					<img class="alinhamentoCentral" src="./imagens/ferrari.webp" alt="Ferrari F1">
 					<p><a href="https://commons.wikimedia.org/wiki/File:Charles_Leclerc-Ferrari_SF1000_(3).jpg" rel="external" target="_blank"><small>Autor da imagem</small></a></p>
 					<ul>
 						<li><strong>Mundiais:</strong> 16</li>
@@ -105,6 +118,7 @@
 					<p>Um dos times mais clássicos da Formula 1, a Ferrari marcou seu nome na história com diversos peridos de dominância total, com destaque entre 1996-2004, onde ganhou múltiplos campeonatos com <strong><a href="https://www.instagram.com/michaelschumacher/" rel="external" target="_blank"><small>Michael Schumacher</small></a></strong></p>
 				</article>
 
+				<!-- Mercedes Card -->
 				<div class="card" id="mercedesCard">
 					<div class="logo" id="mercedesLogo"></div>
 					<p>Mercedes</p>
@@ -112,7 +126,7 @@
 				<article class="card1" id="mercedesCard1">
 					<h3>Mercedes</h3>
 					<input type="button" id="esconderMercedes" value="&#x274C">
-					<img src="./imagens/mercedes.jpg" alt="mercedes F1">
+					<img class="alinhamentoCentral" src="./imagens/mercedes.webp" alt="mercedes F1">
 					<p><a href="https://commons.wikimedia.org/wiki/File:Lewis_Hamilton_2020_Tuscan_Grand_Prix_-_race_day_(cropped).jpg" rel="external" target="_blank">Autor da imagem
 					</a><p>
 					<ul>
@@ -129,6 +143,7 @@
 					</p>
 				</article>
 
+				<!-- Mclaren Card -->
 				<div class="card" id="mclarenCard">
 					<div class="logo" id="mclarenLogo"></div>
 					<p>Mclaren</p>
@@ -136,8 +151,9 @@
 				<article class="card1" id="mclarenCard1">
 					<h3>Mclaren</h3>
 					<input type="button" id="esconderMclaren" value="&#x274C">
-					<img src="./imagens/mclaren.jpg" alt="Mclaren F1">
+					<img class="alinhamentoCentral" src="./imagens/mclaren.webp" alt="Mclaren F1">
 					<p><a href="https://commons.wikimedia.org/wiki/File:Lando_Norris-McLaren_MCL_35_(4).jpg" rel="external" target="_blank"><small>Autor da imagem</small></a></p>
+					<p><a href="https://commons.wikimedia.org/wiki/File:Mclaren_logo.jpg" rel="external" target="_blank"><small>Autor da logo</small></a></p>
 					<ul>
 						<li><strong>Mundiais: </strong>8</li>
 						<li><strong>Vitórias: </strong>183</li>
@@ -147,6 +163,7 @@
 					<p>Conhecida principalmente por seus pilotos, como Ayrton Senna, Alan Prost e mais recentemente (2022) Lando Norris, esse time se destaca pela sempre presente inovação em seus carros</p>
 				</article>
 
+				<!-- Williams Card -->
 				<div class="card" id="williamsCard">
 					<div class="logo" id="williamsLogo"></div>
 					<p>Williams</p>
@@ -154,9 +171,9 @@
 				<article class="card1" id="williamsCard1">
 					<h3>Williams</h3>
 					<input type="button" id="esconderWilliams" value="&#x274C">
-					<img src="./imagens/williams.jpg" alt="Williams F1">
+					<img class="alinhamentoCentral" src="./imagens/williams.webp" alt="Williams F1">
 					<p><small><a href="https://commons.wikimedia.org/wiki/File:George_Russel-Williams_FW43_(1).jpg" rel="external" target="_blank">Autor da imagem</a></small></p>
-					<p><a href="https://commons.wikimedia.org/wiki/File:Williamsracing-20200530-0001.jpg" rel="external" target="_blank"><small>Autor da logo</small></a></p>
+					<p><a href="https://commons.wikimedia.org/wiki/File:Logo_Williams_F1.png" rel="external" target="_blank"><small>Autor da logo</small></a></p>
 					<ul>
 						<li><strong>Mundiais: </strong>9</li>
 						<li><strong>Vitórias: </strong>114</li>
@@ -172,9 +189,8 @@
 
 		<section id="pistas">
 
-			<h2 class="title">Pistas lendárias</h2>
+			<h2 class="title">PISTAS LENDÁRIAS</h2>
 			<p>Além dos carros mais rápidos e os melhores pilotos, a Formula 1 já correu e ainda corre nos melhores circuitos de rua e fechados do automobilismo</p>
-			<hr>
 			<article>
 				<h3>Spa Francorchamps</h3>
 				<img src="./imagens/spa.png" alt="Spa Francorchamps">
@@ -197,35 +213,40 @@
 
 		<section id="historias">
 			<section>
-				<h2><em>Histórias</em></h2>
-				<p id="mensao"><img src="imagens/aspas.png" alt="aspas"/><em>Como um esporte a motor, a Formula 1 já teve várias histórias emocionantes e de rivalidades que íam além da pista entre os melhores pilotos do mundo</em><img src="imagens/aspas.png" alt="aspas"/></p>
+				<h2><em>HISTÓRIAS</em></h2>
+				<p class="frases"><em><q>Como um esporte a motor, a Formula 1 já teve várias histórias emocionantes e de rivalidades que íam além da pista entre os melhores pilotos do mundo</q></em></p>
 			</section>
+
 			<article>
 				<h3>Hamilton vs Max Verstappen <br> (2021)</h3>
-				<img src="./imagens/lewis-max.jpg" alt="Hamilton e Verstappen">
+				<img class="alinhamentoCentral" src="./imagens/lewis-max.webp" alt="Hamilton e Verstappen" height="100%" width="100%">
 				<p>A história mais atual de uma rivalidade é justamente essa: <strong>Hamilton vs Verstappen</strong>, que disputaram na pista cada ponto ganho na temporada da f1 em 2021. Justamente nesse ano que tiveram vários encontros e desencontros na pista, com destaque na <a href="https://www.youtube.com/watch?v=oIKel6jVD3Q" rel="external" target="_blank">batida de Lewis em Max</a> no GP da Inglaterra de 2021. O título foi decidido na última corrida do ano, onde os dois chegaram empatados nos pontos, fato que quase nunca ocorre na F1</p>
 				<hr>
 				<p><a href="https://desporto.sapo.pt/motores/artigos/max-verstappen-vs-lewis-hamilton-a-rivalidade-que-reacendeu-a-chama-da-formula-1" rel="external" target="_blank">Acesse aqui</a>  se quiser saber mais detalhadamente essa histórica temporada</p>
 			</article>
+
 			<article>
 				<h3>Senna vs Prost (1989)</h3>
-				<img src="./imagens/senna-prost.jpg" alt="Senna versus Prost">
+				<img class="alinhamentoCentral" src="./imagens/senna-prost.webp" alt="Senna versus Prost">
 				<p>Essa é clássica: <strong>Senna vs Prost</strong> foi a última (digamos) rivalidade com um ódio imensurável envolvido. Podemos dizer que tudo começou quando a Mclaren construiu o melhor carro do grid, e colocou os melhores pilotos para pilotá-lo, isso rendeu a dupla mais destruídora de todos os tempos na Formula 1. Porém, Senna e Prost construíram uma rivalidade sem igual que dividiu o time e rendeu diversos episódios constrangedores e épicos na pista. Tudo explodiu quando os dois bateram na penúltima corrida do ano, e o que aconteceu depois? Uma longa história...</p>
 				<hr>
 				<p><a href="https://ge.globo.com/motor/formula-1/blogs/voando-baixo/post/2020/04/03/senna-x-prost-a-maior-rivalidade-da-historia-do-esporte-mundial.ghtml" rel="external" target="_blank">Acesse aqui</a> para descobrir mais sobre toda essa confusão</p>
 			</article>
+
 			<article>
 				<h3>James Hunt vs Nick Lauda (1975)</h3>
-				<img src="./imagens/james-nick.jpg" alt="James Hunt versus Nick Lauda">
+				<img class="alinhamentoCentral" src="./imagens/james-nick.webp" alt="James Hunt versus Nick Lauda">
 				<p><a href="https://commons.wikimedia.org/wiki/File:Hunt_and_Lauda_at_1975_Dutch_Grand_Prix.jpg"><small>Autor da imagem</small></a></p>
 				<p>Outra clássica disputa épica entre dois pilotos com habilidades fora da curva, em uma época onde dois a três pilotos morriam nas temporadas de Formula 1, o esporte naquela época era perigoso e apenas os mais corajosos enfrentavam o terror de pilotar a mais de 200 Km/h em carros nada seguros. E foi nesse cenário que James e Nick travaram anos de disputas lendárias, até mesmo depois do <a href="https://www.grandepremio.com.br/f1/noticias/na-garagem-niki-lauda-preso-bola-fogo-acidente-terrivel-gp-da-alemanha/" rel="external" target="_blank"><strong>grande acidente de Nick Lauda</strong></a>, que marcou como esses dois pilotos iriam disputar mesmo próximos da morte</p>
 				<hr>
 				<p><a href="https://ge.globo.com/motor/formula-1/blogs/f1-memoria/post/2020/06/22/james-hunt-derrotou-favorito-niki-lauda-e-deu-a-hesketh-historica-vitoria-na-holanda-em-1975.ghtml" rel="external" target="_blank">Acesse aqui</a> para descobrir mais sobre essa rivalidade</p>
 			</article>
-			<article>
+
+			<article style="margin: 0 auto; border-radius: 5px 5px 0 0;">
 				<h3>&#x2728 Quer ver mais?</h3>
 				<p>Interessado em mais histórias assim? <a href="https://youtube.com/playlist?list=PLtbXKJFSQBWD3u6B8F8W8ieGcQpf20SIM" rel="external" target="_blank">Acesse aqui</a> essa playlist muito boa que nos conta algumas histórias épicas da Formula 1</p>
 			</article>
+
 		</section>
 	</main>
 	<footer>
@@ -233,6 +254,7 @@
 		<ul>
 			<li><a href="https://github.com/Danilo-Vicentin-Silva" rel="author" target="_blank">Github</a></li>
 			<li><a href="https://www.instagram.com/danilo_vicentin_da_silva/" rel="author" target="_blank">Instagram</a></li>
+			<li><a href="https://www.linkedin.com/in/danilo-vicentin-da-silva-16a84022b/" rel="author" target="_blank">LinkedIn</a></li>
 		</ul>
 	</footer>
 
