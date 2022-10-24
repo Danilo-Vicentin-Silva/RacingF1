@@ -64,7 +64,7 @@
 	background-color: var(--cor);
 
 	position: absolute;
-	top: 2425px;
+	top: 2200px;
 	left: 37px;
 	width: 70vw;
 	height: 400px;
@@ -101,7 +101,6 @@
 
 hr {
 	margin: 10px auto;
-	width: 70vw;
 }
 
 a {
@@ -156,6 +155,11 @@ nav li,a {
 	box-shadow: inset 6px 6px 13px 0px black;
 }
 
+#melhoresPilotos p {
+	margin-left: 10px;
+	padding: 15px;
+}
+
 #melhoresPilotos h3 {
 	text-align: center;
 	background-image: linear-gradient(to right, #1b1926, #0d0c12);
@@ -175,12 +179,6 @@ nav li,a {
 
 #michaelSchumacher {
 	background: url("../imagens/schumacher.webp") center top no-repeat fixed;
-}
-
-#melhoresPilotos p {
-	margin-left: 25px;
-	width: 70vw;
-	padding: 15px;
 }
 
 #melhoresEquipes {
