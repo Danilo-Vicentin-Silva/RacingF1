@@ -9,6 +9,7 @@
 	<title>Home</title>
 	<link rel="stylesheet" href="stylesheets/style.css" />
 	<link rel="stylesheet" href="stylesheets/style-tablet.css">
+	<link rel="stylesheet" href="stylesheets/style-desktop.css">
 	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
 	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png" />
@@ -21,12 +22,12 @@
 		<nav>
 			<ul>
 				<li><a href="https://www.formula1.com/en/results.html" rel="external" target="_blank">Temporada Atual</a></li>
-				<li><a href="index.html" rel="prev" target="_self">Home</a></li>
-				<li><a href="https://github.com/Danilo-Vicentin-Silva" rel="author" target="_blank">Github</a></li>
+				<li id="home"><a href="index.html" rel="prev" target="_self">Home</a></li>
+				<li id="github"><a href="https://github.com/Danilo-Vicentin-Silva" rel="author" target="_blank">Github</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
+	<aside>
 		<section id="introducao" class="frases">
 			<h2 class="title">O QUE É A FORMULA 1?</h2>
 			<p>
@@ -41,7 +42,8 @@
 		</section>
 
 		<section id="showromCarros"></section>
-
+	</aside>
+	<main>
 		<section id="melhoresPilotos">
 			<h2 class="title">OS MELHORES PILOTOS</h2>
 
@@ -94,11 +96,10 @@
 
 		</section>
 
-		<section>
-			<h2 class="title">PRINCIPAIS EQUIPES</h2>
-			<p class="dicas"> &#x2728 Clique nos cards abaixo para acessar informações sobre as equipes</p>
-
-			<section id="melhoresEquipes">
+		<section id="melhoresEquipes">
+				<h2 class="title">PRINCIPAIS EQUIPES</h2>
+				<p class="dicas"> &#x2728 Clique nos cards abaixo para acessar informações sobre as equipes</p>
+				<p class="dicasDesktop">&#x2728 Passe o mouse sobre os cards para acessar informações sobre as equipes</p>
 
 				<!-- Ferrari Card -->
 				<div class="card" id="ferrariCard">
@@ -116,7 +117,7 @@
 						<li><strong>Piloto principal: </strong>Michael Schumacher</li>
 					</ul>
 					<hr>
-					<p>Um dos times mais clássicos da Formula 1, a Ferrari marcou seu nome na história com diversos peridos de dominância total, com destaque entre 1996-2004, onde ganhou múltiplos campeonatos com <strong><a href="https://www.instagram.com/michaelschumacher/" rel="external" target="_blank"><small>Michael Schumacher</small></a></strong></p>
+					<p>Um dos times mais clássicos da Formula 1, a Ferrari marcou seu nome na história com diversos períodos de dominância total, com destaque entre 1996-2004, onde ganhou múltiplos campeonatos com <strong><a href="https://www.instagram.com/michaelschumacher/" rel="external" target="_blank"><small>Michael Schumacher</small></a></strong></p>
 				</article>
 
 				<!-- Mercedes Card -->
@@ -183,9 +184,6 @@
 					<hr>
 					<p>A Williams é uma das únicas equipes sem uma grande marca de carros por trás que obteve sucesso na Formula 1. Junto ao seu dono, Frank Williams, lideram e dominaram diversos anos no esporte. Porém, desde da década de 2000, nunca mais foi a mesma</p>
 				</article>
-
-			</section>
-
 		</section>
 
 		<section id="pistas">

@@ -24,6 +24,10 @@
 	padding: 15px;
 }
 
+.dicasDesktop {
+	display: none;
+}
+
 .title {
 	color: yellow;
 	text-decoration: overline;

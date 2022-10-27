@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@media screen and (min-width: 992px) {
+    :root {
+        --cor: #1b1926;
+        --cor1: #400101;
+        --cor2: #730202;
+        --cor3: #a61103;
+        --cor4: #f21905;
+        --font: "Oswald", sans-serif;
+    }
+
+    h2, h3 {
+        letter-spacing: 5px;
+    }
+
+    .dicas {
+        display: none;
+    }
+
+    .dicasDesktop {
+        display: block;
+    }
+
+    .fotosPilotos, #showromCarros {
+        height: 350px;
+    }
+
+    .card {
+        transition: box-shadow 0.5s;
+        height: 150px;
+        width: 100px;
+    }
+
+    .card1 {
+        transition: background-color 0.6s;
+        top: 2400px;
+        left: 320px;
+        width: 50vw;
+        height: 370px;
+    }
+
+    .card1 input {
+        top: 2vh;
+        left: 45vw;
+    }
+
+    body {
+        font-size: 1.2em;
+        background-image: linear-gradient(to bottom, var(--cor3), var(--cor2), var(--cor1));
+    }
+
+    header {
+        height: 100px;
+    }
+
+    main {
+        margin: auto;
+        width: 50vw;
+    }
+
+    #introducao {
+        text-align: center;
+    }
+
+    #showromCarros {
+        border-radius: 7px;
+        width: 70vw;
+        margin: auto;
+    }
+
+    #melhoresPilotos {
+        background-color: var(--cor);
+        border-radius: 7px;
+        box-shadow: 0px 0px 22px -2px black;
+    }
+
+    #melhoresPilotos h3 {
+        background: none;
+        margin: auto;
+    }
+    
+    #melhoresEquipes {
+        background-color: var(--cor3);
+        box-shadow: 0px 0px 15px -5px black;
+        border-radius: 7px;
+    }
+    #historias {
+        padding: 5px;
+        border-radius: 7px;
+    }
+    #historias > article {
+        width: 45vw;
+    }
+}
