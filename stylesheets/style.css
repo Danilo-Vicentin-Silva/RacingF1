@@ -24,10 +24,6 @@
 	padding: 15px;
 }
 
-.dicasDesktop {
-	display: none;
-}
-
 .title {
 	color: yellow;
 	text-decoration: overline;
@@ -101,6 +97,10 @@
 
 .alinhamentoDireita {
 	text-align: end;
+}
+
+abbr {
+	text-decoration: none;
 }
 
 hr {
