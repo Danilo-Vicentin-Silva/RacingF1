@@ -265,6 +265,11 @@ a {
 	color: darkblue;
 }
 
+#historias img {
+	border-radius: 7px;
+	width: 100%;
+}
+
 footer {
 	background-color: var(--cor);
 	text-align: center;

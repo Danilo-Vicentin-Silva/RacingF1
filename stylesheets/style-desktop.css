@@ -1,87 +1,114 @@
 @charset "UTF-8";
 @media screen and (min-width: 992px) {
-    :root {
-        --cor: #1b1926;
-        --cor1: #400101;
-        --cor2: #730202;
-        --cor3: #a61103;
-        --cor4: #f21905;
-        --font: "Oswald", sans-serif;
-    }
+	@keyframes shadow-drop-2-center {
+		0% {
+			transform: translateZ(0) scale(1);
+			box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		}
+		100% {
+			transform: translateZ(50px) scale(1.1);
+			box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+		}
+	}
+	@keyframes slide-in-fwd-center {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	:root {
+		--cor: #1b1926;
+		--cor1: #400101;
+		--cor2: #730202;
+		--cor3: #a61103;
+		--cor4: #f21905;
+		--font: "Oswald", sans-serif;
+	}
 
-    h2, h3 {
-        letter-spacing: 5px;
-    }
-    
-    .fotosPilotos, #showromCarros {
-        height: 350px;
-    }
+	h2,
+	h3 {
+		letter-spacing: 5px;
+	}
 
-    .card {
-        transition: box-shadow 0.5s;
-        height: 150px;
-        width: 100px;
-    }
+	.fotosPilotos,
+	#showromCarros {
+		height: 350px;
+	}
 
-    .card1 {
-        transition: background-color 0.6s;
-        top: 2400px;
-        left: 320px;
-        width: 50vw;
-        height: 370px;
-    }
+	.card {
+		height: 150px;
+		width: 100px;
+	}
 
-    .card1 input {
-        top: 2vh;
-        left: 45vw;
-    }
+	.card:hover {
+		cursor: pointer;
+		animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+			both;
+	}
+	.card1 {
+		animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+			both;
+		width: 25vw;
+	}
 
-    body {
-        font-size: 1.2em;
-        background-image: linear-gradient(to bottom, var(--cor3), var(--cor2), var(--cor1));
-    }
+	.card1 input {
+		top: 2vh;
+		left: 45vw;
+	}
 
-    header {
-        height: 100px;
-    }
+	body {
+		font-size: 1.2em;
+		background-image: linear-gradient(
+			to bottom,
+			var(--cor3),
+			var(--cor2),
+			var(--cor1)
+		);
+	}
 
-    main {
-        margin: auto;
-        width: 50vw;
-    }
+	header {
+		height: 100px;
+	}
 
-    #introducao {
-        text-align: center;
-    }
+	main {
+		margin: auto;
+		width: 50vw;
+	}
 
-    #showromCarros {
-        border-radius: 7px;
-        width: 70vw;
-        margin: auto;
-    }
+	#introducao {
+		text-align: center;
+	}
 
-    #melhoresPilotos {
-        background-color: var(--cor);
-        border-radius: 7px;
-        box-shadow: 0px 0px 22px -2px black;
-    }
+	#showromCarros {
+		border-radius: 7px;
+		width: 70vw;
+		margin: auto;
+	}
 
-    #melhoresPilotos h3 {
-        text-shadow: 3px 3px black;
-        background: none;
-        margin: auto;
-    }
-    
-    #melhoresEquipes {
-        background-color: var(--cor3);
-        box-shadow: 0px 0px 15px -5px black;
-        border-radius: 7px;
-    }
-    #historias {
-        padding: 5px;
-        border-radius: 7px;
-    }
-    #historias > article {
-        width: 45vw;
-    }
+	#melhoresPilotos {
+		background-color: var(--cor);
+		border-radius: 7px;
+		box-shadow: 0px 0px 22px -2px black;
+	}
+
+	#melhoresPilotos h3 {
+		text-shadow: 3px 3px black;
+		background: none;
+		margin: auto;
+	}
+
+	#melhoresEquipes {
+		background-color: var(--cor3);
+		box-shadow: 0px 0px 15px -5px black;
+		border-radius: 7px;
+	}
+	#historias {
+		padding: 5px;
+		border-radius: 7px;
+	}
+	#historias > article {
+		width: 45vw;
+	}
 }
